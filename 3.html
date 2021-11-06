@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <label>
+        <input type="radio" name="test" onchange="func(this)" value="1">
+        select 1
+    </label>
+    <label>
+        <input type="radio" name="test" onchange="func(this)" value="2">
+        select 2
+    </label>
+    <label>
+        <input type="radio" name="test" onchange="func(this)" value="3">
+        select 3
+    </label>
+    <h1 id="h1">SELECT</h1>
+    <script>
+        function func(radio){
+            switch(radio.value){
+                case '1' :
+                    document.getElementById('h1').innerHTML = '1 selected'
+                    break;
+                case '2' :
+                    document.getElementById('h1').innerHTML = '2 selected'
+                    break;
+                case '3' :
+                    document.getElementById('h1').innerHTML = '3 selected'
+                    break;
+            } 
+            
+        }
+    </script>
+    
+</body>
+</html>
