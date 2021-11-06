@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input ID="text" type="text" value="hello">
+    <button id="btn" onclick="func()">click</button><br>
+    <img id="img" src="https://ww.namu.la/s/890074c986347b165c4a241e880b4ded906abdf420e997acefce94be5dc4876a1cd088a152abfc6165042389d91b0fba0c278ccecaf439a88346e2271c576e767aa8a19b030728ad4ffd0922af23b9ff">
+    <h1 id="h1">hello world</h1>
+    <script>
+        function func() {
+            var text = document.getElementById('text').value
+            // document.getElementById('h1').innerHTML = text;
+            document.getElementById("img").src =text;
+        }
+        //console.dir(document.getElementById('text').value)
+    </script>
+</body>
+</html>
