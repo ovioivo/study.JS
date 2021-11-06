@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input id="text" type="text" value="">
+    <input id="text2" type="text" value="">
+    <button onclick="func()">+</button>
+    <script>
+        g_obj={
+        }
+        function func(){
+            var a = document.getElementById("text")
+            var b = document.getElementById("text2")
+            g_obj[a.value]=b.value  
+        }
+    </script>
+</body>
+</html>
